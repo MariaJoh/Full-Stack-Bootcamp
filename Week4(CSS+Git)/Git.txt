@@ -13,6 +13,8 @@ Introduction to Git and Github, Repositories, Local/Remote, Branches, Local Work
         - Remote repository: The project folder that lives in the cloud (GitHub)
     - commit: Save changes
     - stage: Prepare files to be committed
+    - push: Upload
+    - pull: Download
 
 # Local Workflow
     - 3 areas:
@@ -29,13 +31,21 @@ Introduction to Git and Github, Repositories, Local/Remote, Branches, Local Work
                 - Public (open source)
             - README.md: Project description file
         - Local:
-            First time:
-                - git init: Initialize a local git repository
+            - First time:
+                - git init: Initialize a local git repository (FIRST TIME ONLY)
                 - git add: Stage files
                     - git add file1.html: Stage file1.html
                     - git add .: Stage all files
                 - git commit -m "Message (describe your changes here)"
+                - git remote add origin https://github.com/MariaJoh/Full-Stack-Bootcamp.git (FIRST TIME ONLY)
+                - git push -u origin main
+            - Generic
+                - git status: Current status of local repository
         - Working with remotes
+
+# Branches
+    - Default (master/main)
+    - Separate branches can be created to work on individual features
             
 
 
