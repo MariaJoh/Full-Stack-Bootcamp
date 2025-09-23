@@ -39,6 +39,9 @@ Introduction to Git and Github, Repositories, Local/Remote, Branches, Local Work
                 - git commit -m "Message (describe your changes here)"
                 - git remote add origin https://github.com/MariaJoh/Full-Stack-Bootcamp.git (FIRST TIME ONLY)
                 - git push -u origin main
+            - Second time and onwards:
+                - BEFORE EDITING:
+                    - git pull: Download most recent version to start your working directory
             - Generic
                 - git status: Current status of local repository
         - Working with remotes
