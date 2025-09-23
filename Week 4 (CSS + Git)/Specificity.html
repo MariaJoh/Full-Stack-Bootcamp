@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        #id-selector {
+            font-size: 10px;
+        }
+
+        * {
+            font-size: 60px; /* Universal selector - applies to everything on page unless a higher specificity rule overrides it (has lowest priority) */
+        }
+
+        .heading-1 {
+            font-size: 20px; /* Class selector; second-hightst priority */
+        }
+
+        h1 {
+            font-size: 50px; /* Element selector level of specificity/priority */
+        }
+
+        h1 {
+            font-size: 75px; /* This overrides the former h1 */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 40px;">Inline example</h1>  <!-- This style overrides both h1 style tags since it's inline -->
+    <h1 class="heading-1">Class selector example</h1>
+    <p>This paragraps falls under the universal selector (*)</p>
+    <h1 id="id-selector">This is an example of the ID selector with the highest specificity/priority</h1>
+</body>
+</html>
+
+
+
+
+<!--
+    # Specificity
+        - Priority of a particular style over another style
+
+        - Rules
+            - Latest style rule applies
+            - Inline has more priority over internal
+            - Neither internal nor external have more priority over the other
+
+        - Priority (rank from top to bottom)
+            1. ID selector (#id)
+            2. Class selector
+            3. Element selector (h1, p, div, etc.)
+            4. Universal selector (*)
+
+        - Additional notes:
+            - !important
+                - This keyword overrides the other rules without specificity restrictions (overuse is not a good practice; better to understand specificity)
+
+-->

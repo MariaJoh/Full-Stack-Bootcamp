@@ -1,0 +1,116 @@
+<html lang=""en>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form>
+            <h1>Registration Form</h1>
+            <table> <!--Using a table here for organization, though it's not necessary-->
+                <tr>
+                    <td>Name:</td>
+                    <td>
+                        <input type="text" placeholder="Name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number" placeholder="Age" required></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" placeholder="Password" required></td>
+                </tr>
+                <tr>
+                    <td>Date of birth:</td>
+                    <td><input type="date" required></td>
+                </tr>
+                <tr>
+                    <td>Resume:</td>
+                    <td><input type="file" required></td>
+                </tr>
+                <tr>
+                    <td>Favorite color:</td>
+                    <td><input type="color"></td>
+                </tr>
+                <tr>
+                    <td>Date of graduation:</td>
+                    <td><input type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <td>Range:</td>
+                    <td><input type="range"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                        <input type="radio" name="gender">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies:</td>
+                    <td>
+                        <input type="checkbox" name="hobbies">Swimming
+                        <input type="checkbox" name="hobbies">Working out
+                        <input type="checkbox" name="hobbies">Listening to music
+                    </td>
+                </tr>
+                <div>
+                    <tr>
+                        <td>Describe your experience:</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea rows="10" cols="50" maxlength="100"></textarea>
+                        </td>
+                    </tr>
+                </div>
+                <tr>
+                    <td>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                        <button type="button">Random</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+
+
+<!--
+    # Forms:
+        - Used to collect data from the user
+        - Tags:
+            - form: Wrapper tag for HTML forms
+            - input: Input field for user data
+                - "type" attribute
+                    - text: Simple text input
+                    - number: Number input
+                    - email
+                    - password
+                    - date
+                    - datetime-local
+                    - month
+                    - week
+                    - time
+                    - file
+                    - color
+                    - range
+                    - radio: Single selection
+                    - checkbox: Multiple selection
+                    - value: Add a default value for the field
+                - "name" attribute: Associates that element with other elements of the same name
+                - "placeholder" attribute
+                - "required" attribute: Make any field required
+                - "disabled" attribute: Disable a field
+            - button
+
+    # Additional notes:
+        - input type="hidden": used when you don't want to showe the field, but want to process/store the values with other details
+-->

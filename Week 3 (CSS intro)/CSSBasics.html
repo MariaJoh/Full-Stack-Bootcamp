@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="style1.css"> <!--External styling link-->
+    <!--Internal styling below:
+    <style>
+        h1 {
+            color:antiquewhite;
+            background-color:cornflowerblue;
+            font-size:60px;
+            font-weight:100;
+            /* border-width:5px;
+            border-style:dotted;
+            border-color:blanchedalmond; */
+            border: 5px dotted blanchedalmond;
+            border-radius:6px
+        }
+
+        p {
+            color:cornflowerblue;
+            background-color:antiquewhite;
+            font-size:20px;
+            border-radius:6px;
+        }
+
+        img {
+            height:100px;
+            background-color:darksalmon;
+            border-radius:50%; /* Crops image to a circle */
+        }
+    </style>
+    -->
+</head>
+<body>
+    <h1>CSS Basics</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec fermentum nisl. Nunc iaculis mauris eget nunc sagittis, accumsan rutrum nunc gravida. Mauris rhoncus purus vitae nulla interdum, quis blandit ipsum vestibulum. Praesent vel massa ante. Mauris sed neque ante. In hac habitasse platea dictumst. Etiam finibus ipsum sit amet aliquam dictum. In venenatis enim vitae ornare consectetur. Donec et lacus risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo augue vitae nulla faucibus, ac interdum magna fermentum. Proin aliquam sodales convallis. Curabitur vitae malesuada nunc. Etiam molestie nibh a ipsum pharetra, vel tristique sem malesuada. Sed ultrices.</p>
+    <!--Inline style alternative below
+        <h1 style="color:cornflowerblue; font-size:60px; background-color:antiquewhite">CSS Basics</h1>
+        <p style="color:cornflowerblue; font-size:20px; background-color:antiquewhite">Text</p>
+    -->
+    <br>
+    <img src="https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3.png">
+    <br><br>
+    <ul>
+        <li>
+            <a href="https://www.facebook.com" target="_blank" id="facebook-link">Facebook</a>
+            <!--ID Selector used in this link-->
+        </li>
+        <li class="uppercase">
+            <a href="https://www.instagram.com">Instagram</a>
+            <!--Class Selector used in this li-->
+        </li>
+        <li class="uppercase">
+            <a href="https://www.x.com">Twitter</a>
+            <!--Class Selector used in this li-->
+        </li>
+    </ul>
+</body>
+</html>
+
+
+<!--
+    # CSS
+        - Cascading Style Sheets
+        - Add styles to webpage initially created using HTML
+
+        - Types of styling:
+            - Inline (highest priority / will override the others)
+                - "style" attribute
+                - Syntax:
+                    style="property1:value1; property2:value2"    # add a property
+                        - property: name of the style
+                        - value: value for that style
+            - Internal (same priority as external / whichever is referenced first is applied)
+                - "style" tag (inside head tag)
+                - Syntax: 
+                    <style>
+                        h1 {
+                            property1:value1;
+                            property2;value2;
+                        }
+                    </style>
+            - External (same priority as internal / whichever is referenced first is applied)
+                1. Create a separate .css file
+                2. Link this external file to the .html file
+                - Syntax:
+                    <link rel="stylesheet" href="">
+                        - rel stands for relation
+                        - href links related path
+
+        - Properties:
+            - color: add color to an element
+            - background-color: background color of the element
+            - font-weight: bold/light (100, 200, 300, ..., 900)
+            - border: add a border to an element
+                    - Syntax:
+                        border: [style] [style] [color]
+                    - Sub properties:
+                        - border-width: width of the border
+                        - border-style: style of the border (solid, dashed, dotted)
+                        - border-color: color of the border
+                        # you need all three of the above border styles to create a border
+                        - border-radius: round the border's corners
+            - width: width of the element
+            - height: height of the element
+            - padding, margin
+                - padding: space around the content after/inside the border
+                - margin: space around the content before/outside the border
+                - sub properties:
+                    - padding/margin-top
+                    - padding/margin-right
+                    - padding/margin-bottom
+                    - padding/margin-left
+                - More syntaxes:
+                    - 1 unit: All sides
+                    - 2 units: [top, bottom] [right,left]
+                    - 3 units: [top] [right,left] [bottom]
+            - text-transform
+            - font-family: Font type fo the text element
+            - text-align: Align the text center/left/right
+
+        - Color codes
+            - RGB (Red, Green, Blue)
+                - Syntax: rgb(0-255, 0-255, 0-255)
+                - RGBA:
+                    - A is opacity (0-1)
+            - HEX
+                - 00-FF
+                - Syntax: #RRGGBB (or #RRGGBBAA to include opacity)
+        
+        - Selectors ***
+            - Element Selector (all h1, p, img, etc.)
+            - Class Selector (give multiple elements with different types the same style with .ClassName)
+            - ID Selector (single elements with #IDName)
+            - Universal Selector (applies to ALL, usually not recommended, use *UniversalName)
+            - Note:
+                - These selectors can be grouped together as well
+                - E.g., p, h1, .test-class, #test-id
+
+        - Additional notes:
+            - Comments: /* */ (or ctrl + ?)
+            - The latest style rule is applied
+            - Class vs. ID
+                - Multiple elements can have same class
+                - No two elements can have the same ID
+-->

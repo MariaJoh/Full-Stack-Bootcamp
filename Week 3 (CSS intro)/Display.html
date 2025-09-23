@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display</title>
+    <style>
+        #span-1 {
+            display: block;
+        }
+
+        #span-2 {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        #heading-1 {
+            display: inline;
+        }
+
+        #p-1 {
+            display: none;
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading-1">Heading1</h1>
+    <span>Sub-context</span>
+
+    <span id="span-1">Display</span>
+   
+    <span id="span-2">Walid</span>
+    <span>Tibri</span>
+
+    <p id="p-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, vel! Veritatis explicabo corporis exercitationem, temporibus nisi dolorum ea maxime eius.</p>
+
+    <h1>Hello</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, odio aspernatur. Officia quisquam, at asperiores quas atque minus autem ullam aut quo, porro accusamus non temporibus odit officiis dicta voluptatum voluptatem laboriosam architecto placeat. Cum nam excepturi non velit. Voluptate culpa adipisci aperiam eos id doloremque animi odit fugit delectus?</p>
+</body>
+</html>
+
+
+<!--
+    # Display ***
+        - Set the nature of a particular element
+        - Values:
+            - block: Make a specific element "block" in nature
+            - inline: Make a specific element "inline" in nature
+                - width and height cannot be applied to inline elements
+            - inline-block: Be similar to inline + width/height
+            - none: Hide a specific element
+
+    # Additional Notes
+        - Hide elements from the HTML webpage
+            - display: none (remove the element + space)
+            - visibility: hidden (remove the element, space retained)
+
+    # Future
+        - flex, grid
+-->

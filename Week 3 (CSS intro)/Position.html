@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Position</title>
+    <style>
+        #img-1 {
+            width: 200px;
+            position: relative;
+            left: 10px;
+        }
+
+        #img-2 {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            height: 200px;
+        }
+
+        #parent {
+            background-color: cadetblue;
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+        #child {
+            background-color: darkblue;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            right: 10px;
+        }
+
+        #navbar {
+            background-color: cadetblue;
+            position: sticky;
+            top: 0px;
+        }
+
+        #navbar li {
+            display: inline-block;
+            margin: 10px 50px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi placeat, impedit voluptates quam magni deleniti numquam ex quos repudiandae esse.</p>
+
+    <ul id="navbar">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+
+    <h2>Test</h2>
+    <img src="https://th.bing.com/th/id/R.0958a54471d675241f2def64716bf205?rik=ljjkPlUm%2fDb%2bWA&riu=http%3a%2f%2ffeatures.luxurytravelmag.com.au%2fultimate-guide-to-italy%2fassets%2fjwwYeeyKtU%2fshutterstock_1006668772-1-1215x810.jpeg&ehk=bVzH01pNsfgqMwWvIcVHXGHz9MO%2frhQ490jdrulOki0%3d&risl=&pid=ImgRaw&r=0" id="img-1">
+
+    <h2>Students</h2>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <img src="https://th.bing.com/th/id/R.0958a54471d675241f2def64716bf205?rik=ljjkPlUm%2fDb%2bWA&riu=http%3a%2f%2ffeatures.luxurytravelmag.com.au%2fultimate-guide-to-italy%2fassets%2fjwwYeeyKtU%2fshutterstock_1006668772-1-1215x810.jpeg&ehk=bVzH01pNsfgqMwWvIcVHXGHz9MO%2frhQ490jdrulOki0%3d&risl=&pid=ImgRaw&r=0" id="img-2">"
+    
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus error voluptas, repellat deleniti dolorum voluptate reprehenderit consequuntur quae porro dolorem mollitia corporis cum earum accusamus blanditiis perspiciatis aspernatur. Quisquam illo nostrum quasi est! Quam dolore numquam velit quo beatae obcaecati, rerum dicta id, a quod alias totam reprehenderit aut laboriosam eius tenetur ipsa illo iusto placeat earum dolorum expedita sed corrupti architecto! Provident saepe reiciendis animi esse dolores neque excepturi at? Odio impedit corporis, blanditiis asperiores non architecto numquam corrupti repellendus libero accusantium minima maxime porro eveniet recusandae voluptatem rerum dolorum necessitatibus dolorem. A impedit voluptatibus eos, iure corporis quae!</p>
+
+    <br><br>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus error voluptas, repellat deleniti dolorum voluptate reprehenderit consequuntur quae porro dolorem mollitia corporis cum earum accusamus blanditiis perspiciatis aspernatur. Quisquam illo nostrum quasi est! Quam dolore numquam velit quo beatae obcaecati, rerum dicta id, a quod alias totam reprehenderit aut laboriosam eius tenetur ipsa illo iusto placeat earum dolorum expedita sed corrupti architecto! Provident saepe reiciendis animi esse dolores neque excepturi at? Odio impedit corporis, blanditiis asperiores non architecto numquam corrupti repellendus libero accusantium minima maxime porro eveniet recusandae voluptatem rerum dolorum necessitatibus dolorem. A impedit voluptatibus eos, iure corporis quae!</p>
+
+    <br><br>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus error voluptas, repellat deleniti dolorum voluptate reprehenderit consequuntur quae porro dolorem mollitia corporis cum earum accusamus blanditiis perspiciatis aspernatur. Quisquam illo nostrum quasi est! Quam dolore numquam velit quo beatae obcaecati, rerum dicta id, a quod alias totam reprehenderit aut laboriosam eius tenetur ipsa illo iusto placeat earum dolorum expedita sed corrupti architecto! Provident saepe reiciendis animi esse dolores neque excepturi at? Odio impedit corporis, blanditiis asperiores non architecto numquam corrupti repellendus libero accusantium minima maxime porro eveniet recusandae voluptatem rerum dolorum necessitatibus dolorem. A impedit voluptatibus eos, iure corporis quae!</p>
+
+    <br><br>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus error voluptas, repellat deleniti dolorum voluptate reprehenderit consequuntur quae porro dolorem mollitia corporis cum earum accusamus blanditiis perspiciatis aspernatur. Quisquam illo nostrum quasi est! Quam dolore numquam velit quo beatae obcaecati, rerum dicta id, a quod alias totam reprehenderit aut laboriosam eius tenetur ipsa illo iusto placeat earum dolorum expedita sed corrupti architecto! Provident saepe reiciendis animi esse dolores neque excepturi at? Odio impedit corporis, blanditiis asperiores non architecto numquam corrupti repellendus libero accusantium minima maxime porro eveniet recusandae voluptatem rerum dolorum necessitatibus dolorem. A impedit voluptatibus eos, iure corporis quae!</p>
+</body>
+</html>
+
+
+<!--
+    # Position:
+        - Set the position of the element on the webpage
+        - Values:
+            - static (default): Default position
+            - relative ***: Relative to the default position
+            - absolute ***: Relative to the nearest position ancestor or webpage boundaries
+            - fixed: Fixed positioning
+            - sticky: Relative, then fixed
+
+        - Additional properties:
+            - top: Distance from top
+            - right: Distance from right
+            - bottom: Distance from bottom
+            - left: Distance from left
+-->

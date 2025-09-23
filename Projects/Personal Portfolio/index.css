@@ -1,0 +1,165 @@
+/* GLOBAL */
+body {
+    background-color: #f0efeb;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.climate-crisis {
+    font-family: "Climate Crisis";  /*TO DO: Add backup fonts*/
+    font-weight: 20;
+}
+
+/* NAVBAR */
+#navbar {
+    background-color: #c2ccd6;
+    padding-left: 0;
+    list-style: none;
+    text-align: right;
+    margin-top: 0;
+    padding: 5px 10px;
+    position: sticky;
+    top: 0;
+}
+
+#navbar li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
+#header {
+    text-align: center;
+    margin: 100px 0px;
+}
+
+#header h1 {    /* Apply to all h1 within the "header" ID */
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+#header p {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#header ul {
+    list-style: none; /* Removes the bullet points*/
+    padding-left: 0; /* Place it in the absolute center since #header makes this centered */
+}
+
+#header ul li {
+    display: inline-block;
+    margin: 0 20px; /* [top, bottom] [right,left] */
+}
+
+#header ul li a {
+    color: gray;
+    text-decoration: none;
+}
+
+/* ABOUT */
+#about {
+    margin-top: 30px;
+    color: black;
+    background-color: #b294a0;
+    padding: 10px 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/* EXPERIENCE */
+#experience {
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: 2px solid #7c8d7d;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#experience ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#experience .single-exp ul {
+    list-style: circle;
+    padding-left: 40px;
+}
+
+#experience .single-exp {
+    margin-bottom: 30px;
+}
+
+#experience .single-exp p {
+    font-size: 18px;
+    background-color: #7c8d7d;
+}
+
+#experience .single-exp div {
+    text-align: right;
+    font-style: italic;
+}
+
+/* EDUCATION */
+#education {
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 10px 30px; 
+}
+
+/* PROJECTS */
+#projects {
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 10px 30px;
+}
+
+#projects h2 {
+    text-align: left;
+}
+
+#projects .project {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    background-color: #c2ccd6;
+    font-size: 23px;
+    padding: 40px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#projects .project a {
+    text-decoration: none;
+    color: black;
+}
+
+#projects .project:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* SKILLS */
+#skills {
+    margin-top: 30px;
+    color: black;
+    background-color: #b294a0;
+    padding: 10px 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/* FOOTER */
+#footer {
+    margin-bottom: 200px;
+}

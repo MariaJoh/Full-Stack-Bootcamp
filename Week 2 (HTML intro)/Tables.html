@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Tables</title>
+</head>
+<body>
+    <h1>Tables</h1>
+    <table>
+        <tr> <!--Column Headers-->
+            <th>Name</th>
+            <th>Role</th>
+        </tr>
+        <tr> <!--Row 2-->
+            <td>Anna</td>
+            <td>Admin</td>
+        </tr>
+        <tr> <!--Row 3-->
+            <td>Oscar</td>
+            <td>Editor</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Color</th>
+            <th>Fruit</th>
+        </tr>
+        <tr>
+            <td>Simon</td>
+            <td>Red</td>
+            <td>Apple</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td colspan="2">Orange</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+<!--
+    # Tables
+    - Display data in rows and column format
+    - Tags:
+        - <table></table>: Wrapper tag for HTML tables
+        - <tr></tr>: Table rows
+        - <th></th>: Table header
+        - <td></td>: Table data (cells)
+    - Boilerplate syntax for tables:
+        <table>
+            <tr>
+                <th>Column Header 1</th>
+                <th>Column Header 2</th>
+            </tr>
+            <tr>
+                <td>Table Data 1</td>
+                <td>Table Data 2</td>
+            </tr>
+        </table>
+    - Span (th, td)
+        - Used like "merge" in Excel
+        - The element becomes the data for multiple rows or columns
+        - Types:
+            - colspan: Column span
+            - rowspan: Row span
+        - Spans "n" number of rows or columns
+-->

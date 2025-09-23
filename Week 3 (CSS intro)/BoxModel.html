@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Model</title>
+        <style>
+            /* img {
+                height: 250px;
+                border: 5px solid black;
+                padding: 10px;
+                margin: 10px;
+            } */
+
+            #parent {
+                border: 2px solid black;
+                width: 300px;
+                height: 600px;
+                box-sizing: border-box;
+            }
+
+            .child {
+                width: 300px;
+                height: 300px;
+                border: 2px solid black;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Box Model</h1>
+        <!--
+            <img src="https://th.bing.com/th/id/R.0958a54471d675241f2def64716bf205?rik=ljjkPlUm%2fDb%2bWA&riu=http%3a%2f%2ffeatures.luxurytravelmag.com.au%2fultimate-guide-to-italy%2fassets%2fjwwYeeyKtU%2fshutterstock_1006668772-1-1215x810.jpeg&ehk=bVzH01pNsfgqMwWvIcVHXGHz9MO%2frhQ490jdrulOki0%3d&risl=&pid=ImgRaw&r=0">
+        -->
+        <br>
+        <div id="parent">
+            <div class="child">CHILD</div>
+            <div class="child">CHILD</div>
+        </div>
+    </body>
+</html>
+
+
+<!--
+    # Box Model
+        - To better determine the overall dimensions of an element
+        - 4 different components
+            - Content (blue in inspect): Actual dimension of the element
+            - Padding (green): Space inside the border
+            - Border width (orange): Border width
+            - Margin (brown): Space outside the border
+
+        - "box-sizing": Control the dimensions of an element
+            - content-box (default):
+                - width and height only applies to the content part
+            - border-box:
+                - width and height apply to [content + padding + border]
+
+
+-->
