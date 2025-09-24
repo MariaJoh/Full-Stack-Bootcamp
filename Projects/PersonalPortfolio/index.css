@@ -32,6 +32,11 @@ body {
     color: black;
 }
 
+#navbar li a:hover {
+    color: white;
+    cursor: pointer;
+}
+
 /* HEADER */
 #header {
     text-align: center;
@@ -63,6 +68,11 @@ body {
     text-decoration: none;
 }
 
+#header ul li a:hover {
+    color: #b294a0;
+    cursor: pointer;
+}
+
 /* ABOUT */
 #about {
     margin-top: 30px;
@@ -75,7 +85,7 @@ body {
 
 /* EXPERIENCE */
 #experience {
-    margin-top: 30px;
+    margin-top: 60px;
     padding: 10px 30px;
     border: 2px solid #7c8d7d;
     margin-left: 200px;
@@ -99,11 +109,21 @@ body {
 #experience .single-exp p {
     font-size: 18px;
     background-color: #7c8d7d;
+    color: white;
+    padding: 10px;
 }
 
 #experience .single-exp div {
     text-align: right;
     font-style: italic;
+}
+
+#experience .single-exp ul {
+    padding-bottom: 20px;
+}
+
+#experience .single-exp ul li {
+    margin-bottom: 10px;
 }
 
 /* EDUCATION */
@@ -127,36 +147,57 @@ body {
     text-align: left;
 }
 
-#projects .project {
-    display: inline-block;
+#projects .projectgrid {
+    display: flex;
+    gap: 20px; /* even spacing between icons */
+    align-items: center; /* vertical centering */
+    flex-wrap: nowrap; /* keep icons on one line; change to 'wrap' to allow multiple rows */
+    overflow-x: auto;
+}
+
+#projects .projectgriditem {
     width: 150px;
     height: 150px;
     margin: 0 10px;
-    background-color: #c2ccd6;
-    font-size: 23px;
+    background-color: #b294a0;
+    font-size: 18px;
     padding: 40px 10px;
     box-sizing: border-box;
     border-radius: 10px;
+    align-content: center;
 }
 
-#projects .project a {
+#projects .projectgrid a {
     text-decoration: none;
     color: black;
 }
 
-#projects .project:hover {
-    color: red;
+#projects .projectgrid a:hover {
+    color: white;
     cursor: pointer;
 }
 
 /* SKILLS */
 #skills {
-    margin-top: 30px;
-    color: black;
-    background-color: #b294a0;
-    padding: 10px 30px;
+    margin-top: 60px;
+    color: white;
+    background-color: #7c8d7d;
+    padding: 10px 30px 30px;
     margin-left: 200px;
     margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+}
+
+#skills table {
+    padding-left: 20px;
+}
+
+#skills table tr td {
+    padding-right: 20px;
+    text-align: right;
 }
 
 /* FOOTER */

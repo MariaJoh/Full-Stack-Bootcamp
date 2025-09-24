@@ -1,0 +1,86 @@
+/* GLOBAL */
+html {
+    font-size: 14pt;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-optical-sizing: auto;
+    margin: 5% 12% 5%; /* adds a border around the whole webpage that is equal to 3% of the screen width */
+    color: #303030;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        margin: 5%;
+    }
+}
+
+/* OTHER */
+.subpage h1 {
+    color: #f65a7d;
+}
+
+.icon {
+    display: flex; /* one-dimensional layout (row) */
+    gap: 20px; /* even spacing between icons */
+    align-items: center; /* vertical centering */
+    flex-wrap: nowrap; /* keep icons on one line; change to 'wrap' to allow multiple rows */
+    overflow-x: auto; /* horizontal scroll on narrow viewports */
+}
+
+.icon img {
+    height: 35px;
+    width: auto; /* preserve aspect ratio */
+    display: block; /* prevent inline spacing issues */
+}
+
+/* make each wrapper size to its content and center the image */
+.icon > div {
+    display: inline-flex; /* makes an element a flex container while keeping the element itself as an inline-level box (like inline=block + flex behavior); display-flex would force a line break */
+    align-items: center;
+    justify-content: center;
+}
+
+.newsection {
+    margin-top: 75px;
+}
+
+/* grid works best for 2D layouts (rows + columns) */
+.tilegrid {
+    display: grid; /* basic grid setup */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* grid will fit as many 300px wide tiles as possible in one row; the rest will overflow onto new lines */
+    gap: 25px; /* gap between both rows and columns*/
+}
+
+/* the individual "cells" in the tilegrid */
+.tile {
+    box-sizing: border-box; /* ensures padding and borders don't push the tile wider than expected */
+    width: 100%; /* make the tile as wide as the column allows */
+    max-width: 20%rem; /* don't make a tile wider than 300px */
+    min-width: 200px;
+    height: 200px;
+    /* internal visual styling: */
+    padding: 10px;
+    background-color:gray;
+}
+
+/* stacked content: center title + body vertically and horizontally */
+.tile {
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    align-items: center;    /* horizontal centering of children */
+    justify-content: center; /* vertical centering inside the fixed-height tile */
+    gap: 6px; /* small spacing between stacked children */
+    text-align: center; /* center multi-line text */
+    color:cornsilk;
+    font-size: 1.3em; /* 2x font size of parent element; using this instead of rem, root element, incase a tile ends up under a parent that has a specific font-size */
+    text-decoration: none; /* remove the underline from all linked text */
+}
+
+/* defines hover effects for tiles */
+.tile a:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* X-offset, Y-offset, blur-radius, color */
+}
+
