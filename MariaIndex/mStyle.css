@@ -18,8 +18,23 @@ h1 {
 }
 
 /* OTHER */
+header {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+header .logo {
+  height: 20px;
+}
+
 .subpage h1 {
     color: #f65a7d;
+    margin-bottom: 50px;
+}
+
+.subpage h4 {
+    margin-bottom: 20px;
 }
 
 .icon {
@@ -50,7 +65,9 @@ h1 {
 /* grid works best for 2D layouts (rows + columns) */
 .tilegrid {
     display: grid; /* basic grid setup */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* grid will fit as many 300px wide tiles as possible in one row; the rest will overflow onto new lines */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, minmax(200px, 1fr)); /* max 4 tiles per row */
+    /* Use media queries to allow fewer columns on smaller screens */
     gap: 25px; /* gap between both rows and columns*/
 }
 
@@ -84,3 +101,51 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* X-offset, Y-offset, blur-radius, color */
 }
 
+.lecture {
+    margin-bottom:80px;
+}
+
+/* accordion formatting */
+.accordion-item button {
+    background-color: #fcbfc4;
+    font-weight: 700;
+}
+
+.accordion-body {
+    background-color: rgb(255, 251, 245);
+}
+
+.accordion-body table {
+  width: 100%;
+  border-collapse: collapse; /* optional, removes spacing between cells */
+  table-layout: fixed; /* ensures equal column widths */
+}
+
+.accordion-body td {
+  vertical-align: top; /* keeps content aligned to the top */
+  padding: 0.75rem; /* optional, adds spacing inside each cell */
+}
+
+.accordion-body pre {
+    background-color: rgb(36, 36, 36);
+    color: whitesmoke;
+    padding: 15px 15px 15px;
+    font-size: 12pt;
+    border-radius: 5px;
+    vertical-align: center;
+}
+
+.accordion-body td > code {
+    font-weight: 700;
+}
+
+.accordion-body td > ul > li > code {
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .accordion-body td {
+    display: block;
+    width: 100%;
+  }
+}
