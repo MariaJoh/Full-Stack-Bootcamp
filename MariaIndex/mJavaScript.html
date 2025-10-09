@@ -18,20 +18,26 @@
         <h4>Week 4 Lecture 2</h4>
 
         <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
+            <div class="accordion-item">  <!-- Intro to JavaScript -->
                 <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     Intro to JavaScript
                 </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>Text</strong> here.
-                </div>
+                    <div class="accordion-body">
+                        <table>
+                            <tr>
+                                <td>
+                                    JavaScript is a programming language that powers the dynamic behavior on most websites. Alongside HTML and CSS, it is a core technology that makes the web run.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item">  <!-- Data Types -->
                 <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Data Types
@@ -39,12 +45,71 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>Text</strong> here.
+                    <table>
+                        <tr>
+                            <td>
+                                When a new piece of data is introduced into a JavaScript program, the program keeps track of it in an instance of that <strong>data type</strong>. An instance is an individual case of a data type.
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <strong>Booleans</strong> are a primitive data type. They can be either <code>true</code> or <code>false</code>.
+                                </ul>
+                            </td>
+                            <td>
+<pre><code>let lateToWork = true;</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <strong>Null</strong> is a primitive data type. It represents the intentional absence of value. In code, it is represented as <code>null</code>.
+                                </ul>
+                            </td>
+                            <td>
+<pre><code>let x = null;</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <strong>Strings</strong> are a primitive data type. They are any grouping of characters (letters, spaces, numbers, or symbols) surrounded by single quotes <code>'</code> or double quotes <code>"</code>.
+                                </ul>
+                            </td>
+                            <td>
+<pre><code>let single = 'Wheres my bandit hat?';
+let double = "Wheres my bandit hat?";</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <strong>Number</strong> and <strong>undefined</strong> are also <em>primitive</em> data types, while <strong>object</strong> is a <em>non-primitive</em> data type.
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item">  <!-- Variables -->
                 <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Variables
@@ -52,12 +117,28 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>Text</strong> here.
+                    <table>
+                            <tr>
+                                <td>
+                                    <strong>Variables</strong> are used whenever there's a need to store a piece of data. A variable contains data that can be used in the program elsewhere. Using variables also ensures code re-usability since it can be used to replace the same value in multiple places.
+                                    <br>
+                                    <br>
+                                    <em>See <strong>Constants</strong> below for more info.</em>
+                                </td>
+                                <td>
+<pre><code>const currency = '$';
+let userIncome = 85000; 
+
+console.log(currency + userIncome + ' is more than the average income.');
+// Prints: $85000 is more than the average income.</code></pre>
+                                </td>
+                            </tr>
+                        </table>
                 </div>
                 </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item">  <!-- Constants -->
                 <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     Constants
@@ -65,25 +146,72 @@
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>Text</strong> here.
+                    <table>
+                        <tr>
+                            <td>
+                                <strong>Variables & Constants:</strong>
+                                <ul>
+                                    <li>Store data</li>
+                                        <ul>
+                                            <li>Variables: Changing over time (<code>var</code>)</li>
+                                            <li>Constant: Remains fixed over time (<code>const</code>)</li>
+                                        </ul>
+                                    <li>Syntax</li>
+                                        <ul>
+                                            <li><code>var x = 10</code></li>
+                                            <li><code>const name = 20</code></li>
+                                        </ul>
+                                    <li>Declare/Initialize (either)</li>
+                                        <ul>
+                                            <li>Declare: <code>var x</code></li>
+                                            <li>Initialize: <code>var x = 10</code></li>
+                                        </ul>
+                                    <li>Assign: <code>x = 20</code></li>
+                                    <li>Naming conventions:</li>
+                                        <ul>
+                                            <li>Never start with number</li>
+                                            <li>Cannot contain spaces (single word - camelCase)</li>
+                                            <li>Cannot contain special characters other than <code>_</code> and <code>$</code></li>
+                                            <li>Cannot use reserved keywords</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item">  <!-- Displaying Outputs -->
                 <h2 class="accordion-header" id="headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                     Displaying Output
                 </button>
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>Text</strong> here.
-                </div>
+                    <div class="accordion-body">
+                        <table>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li><strong><code>console.log("Hi") **</code>:</strong> Console</li>
+                                        <li><strong><code>alert()</code>:</strong> Basic popup on the webpage</li>
+                                        <li><strong><code>document.write()</code>:</strong> Appends data to the HTML document</li>
+                                        <li><strong><code>document.getElementById('id').innerHTML</code>:</strong> Add HTML inside an element with a specific ID</li>
+                                        <li><strong><code>prompt()</code>:</strong> Output a prompt for the user to respond to</li>
+                                    </ul>  
+                                </td>
+                                <td>
+<pre><code>var result = prompt('Enter your name');
+console.log(result);</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item">  <!-- Popups -->
                 <h2 class="accordion-header" id="headingSix">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                     Popups
@@ -91,12 +219,39 @@
                 </h2>
                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>Text</strong> here.
+                    <table>
+                        <tr>
+                            <td>
+                                <strong>Popups</strong>
+                                <ul>
+                                    <li><strong>alert():</strong> Alert box</li>
+                                        <ul>
+                                            <li>Inform the user</li>
+                                            <li>One button: OK</li>
+                                        </ul>
+                                    <li><strong>confirm():</strong> Confirmation box</li>
+                                        <ul>
+                                            <li>Ask user yes/no based questions</li>
+                                            <li>Two buttons: OK, Cancel</li>
+                                        </ul>
+                                    <li><strong>prompt():</strong> User input box</li>
+                                        <ul>
+                                            <li>Collect user input</li>
+                                            <li>Input field</li>
+                                        </ul>
+                            </td>
+                            <td>
+                                <pre><code>
+alert('You have successfully logged in!');
+                                </code></pre>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item">  <!-- Operators -->
                 <h2 class="accordion-header" id="headingSeven">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                     Operators
@@ -104,7 +259,202 @@
                 </h2>
                 <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>Text</strong> here.
+                    <table>
+                        <tr>
+                            <td>
+                                JavaScript supports <strong>arithmetic operators</strong> for:
+                                <ul>
+                                    <li><code>+</code> addition</li>
+                                    <li><code>-</code> subtraction</li>
+                                    <li><code>*</code> multiplication</li>
+                                    <li><code>/</code> division</li>
+                                </ul>
+                            </td>
+                            <td>
+<pre><code>// Addition
+5 + 5
+// Subtraction
+10 - 5
+// Multiplication
+5 * 10
+// Division
+10 / 5
+// Modulo
+10 % 5</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td>
+                                An <strong>assignment operator</strong> assigns a value to its left operand based on the value of its right operand. Here are some of them:
+                                <ul>
+                                    <li><code>+=</code> addition assignment</li>
+                                    <li><code>-=</code> subtraction assignment</li>
+                                    <li><code>*=</code> multiplication assignment</li>
+                                    <li><code>/=</code> division assignment</li>
+                                </ul>
+                            </td>
+                            <td>
+<pre><code>let number = 100;
+
+// Both statements will add 10
+number = number + 10;
+number += 10;
+
+console.log(number); 
+// Prints: 120</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td>
+                                The <strong>remainder operator</strong>, sometimes called <strong>modulo</strong>, returns the number that remains after the right-hand number divides into the left-hand number as many times as it evenly can.
+                            </td>
+                            <td>
+<pre><code>// calculates # of weeks in a year, rounds down to nearest integer
+const weeksInYear = Math.floor(365/7);
+
+// calcuates the number of days left over after 365 is divded by 7
+const daysLeftOver = 365 % 7 ;
+
+console.log("A year has " + weeksInYear + " weeks and " + daysLeftOver + " days");</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <strong>Comparison operators</strong> are used to comparing two values and return <code>true</code> or <code>false</code> depending on the validity of the comparison:
+                                <ul>
+                                    <li><code>===</code> strict equal</li>
+                                    <li><code>!==</code> strict not equal</li>
+                                    <li><code>></code> greater than</li>
+                                    <li><code>>=</code> greater than or equal</li>
+                                    <li><code><</code> less than</li>
+                                    <li><code><=</code> less than or equal</li>
+                                </ul>
+                            </td>
+                            <td>
+<pre><code>1 > 3       // false
+3 > 1       // true
+250 >= 250  // true
+1 === 1     // true
+1 === 2     // false
+1 === '1'   // false</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td>
+                                The <strong>logical NOT operator</strong> <code>!</code> can be used to do one of the following:
+                                <ul>
+                                    <li>Invert a Boolean value.</li>
+                                    <li>Invert the truthiness of non-Boolean values.</li>
+                                </ul>
+                            </td>
+                            <td>
+<pre><code>let lateToWork = true;
+let oppositeValue = !lateToWork;
+
+console.log(oppositeValue); 
+// Prints: false</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td>
+                                The <strong>logical AND operator</strong> <code>&&</code> checks two values and returns a boolean. If both values are truthy, then it returns <code>true</code>. If one, or both, of the values is falsy, then it returns <code>false</code>.
+                            </td>
+                            <td>
+<pre><code>true && true;      // true
+1 > 2 && 2 > 1;    // false
+true && false;     // false
+4 === 4 && 3 > 1;  // true</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td>
+                                The <strong>logical OR operator</strong> <code>||</code> checks two values and returns a boolean. If one or both values are truthy, it returns <code>true</code>. If both values are falsy, it returns <code>false</code>.
+                            </td>
+                            <td rowspan="2">
+<pre><code>true || false;        // true
+10 > 5 || 10 > 20;    // true
+false || false;       // false
+10 > 100 || 10 > 20;  // false</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="embeddedtable">
+                                    <tr>
+                                        <th>A</th>
+                                        <th>B</th>
+                                        <th>A || B</th>
+                                    </tr>
+                                    <tr>
+                                        <td>false</td>
+                                        <td>false</td>
+                                        <td>false</td>
+                                    </tr>
+                                    <tr>
+                                        <td>false</td>
+                                        <td>true</td>
+                                        <td>true</td>
+                                    </tr>
+                                    <tr>
+                                        <td>true</td>
+                                        <td>false</td>
+                                        <td>true</td>
+                                    </tr>
+                                    <tr>
+                                        <td>true</td>
+                                        <td>true</td>
+                                        <td>true</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td>
+                                The <strong>ternary operator</strong> allows for a compact syntax in the case of binary (choosing between two choices) decisions. It accepts a condition followed by a <code>?</code> operator, and then two expressions separated by a <code>:</code>. If the condition evaluates to truthy, the first expression is executed, otherwise, the second expression is executed.
+                            </td>
+                            <td>
+<pre><code>let price = 10.5;
+let day = "Monday";
+
+day === "Monday" ? price -= 1.5 : price += 1.5;</code></pre>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 </div>
             </div>
@@ -116,29 +466,205 @@
         <h4>Week 5 Lecture 1</h4>
 
         <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
+            <div class="accordion-item"> <!-- Strings and String Methods -->
                 <h2 class="accordion-header" id="headingEight">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                     Strings and String Methods
                 </button>
                 </h2>
                 <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>Text</strong> here.
-                </div>
+                    <div class="accordion-body">
+                        <table>
+                            <tr>
+                                <td>
+                                    <strong>Strings</strong>
+                                    <ul>
+                                        <li><code>""</code>, <code>''</code>, <code>``</code></li>
+                                        <li>Escape character (<code>/</code>)</li>
+                                        <li>Next line character (<code>\n</code>)</li>
+                                        <li>Tab space character (<code>\t</code>)</li>
+                                        <li>Access a specific character in a string using index</li>
+                                            <ul>
+                                                <li>Syntax: <code>str[index]</code></li>
+                                                    <ul>
+                                                        <li>Index: Position - 1</li>
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                                </td>
+                                <td>
+<pre><code>var x = "My hobbies are:\n\t1. Swimming\n\t2. Dancing\n\t3. Singing";
+console.log(x);
+
+var name = "Maria";
+console.log(name[1]);
+
+var firstName = "Maria";
+var lastName = "Johnson";
+console.log(firstName + " " + lastName);
+
+formula to get last character of any string
+var name = "Maria";
+console.log(name[name.length-1])</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <strong>Strings</strong> are a primitive data type. They are any grouping of characters (letters, spaces, numbers, or symbols) surrounded by single quotes <code>'</code> or double quotes <code>"</code>.
+                                </td>
+                                <td>
+<pre><code>let single = 'Wheres my bandit hat?';
+let double = "Wheres my bandit hat?";</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    The <strong><code>.length</code></strong> property of a string returns the number of characters that make up the string.
+                                </td>
+                                <td>
+    <pre><code>let message = 'good nite';
+console.log(message.length);
+// Prints: 9
+
+console.log('howdy'.length);
+// Prints: 5</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    In JavaScript, multiple strings can be concatenated together using the <code>+</code> operator. In the example, multiple strings and variables containing string values have been <strong>concatenated</strong>. After execution of the code block, the <code>displayText</code> variable will contain the concatenated string.
+                                </td>
+                                <td>
+<pre><code>let service = 'credit card';
+let month = 'May 30th'; 
+let displayText = 'Your ' + service  + ' bill is due on ' +  month + '.';
+
+console.log(displayText);
+// Prints: Your credit card bill is due on May 30th.</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item">  <!-- Conditions -->
                 <h2 class="accordion-header" id="headingNine">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapsNine">
                     Conditions
                 </button>
                 </h2>
                 <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>Text</strong> here.
-                </div>
+                    <div class="accordion-body">
+                        <table>
+                            <tr>
+                                <td>
+                                    An <stong><code>if</code> statement</stong> accepts an expression with a set of parentheses:
+                                    <ul>
+                                        <li>If the expression evaluates to a truthy value, then the code within its code body executes.</li>
+                                        <li>If the expression evaluates to a falsy value, its code body will not execute.</li>
+                                    </ul>
+                                </td>
+                                <td>
+    <pre><code>const isMailSent = true;
+
+if (isMailSent) {
+  console.log('Mail sent to recipient');
+}</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    An <strong><code>else</code></strong> block can be added to an <code>if</code> block or series of <code>if</code> - <code>else if</code> blocks. The <code>else</code> block will be executed only if the <code>if</code> condition fails.
+                                </td>
+                                <td>
+    <pre><code>const isTaskCompleted = false;
+
+if (isTaskCompleted) {
+  console.log('Task completed');
+} else {
+  console.log('Task incomplete');
+}</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    After an initial <code>if</code> block, <strong><code>else if</code></strong> blocks can each check an additional condition. An optional <code>else</code> block can be added after the <code>else if</code> block(s) to run by default if none of the conditionals evaluated to truthy.
+                                </td>
+                                <td>
+    <pre><code>const size = 10;
+
+if (size > 100) {
+  console.log('Big');
+} else if (size > 20) {
+  console.log('Medium');
+} else if (size > 4) {
+  console.log('Small');
+} else {
+  console.log('Tiny');
+}
+// Print: Small</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    The <strong><code>switch</code></strong> statements provide a means of checking an expression against multiple <code>case</code> clauses. If a case matches, the code inside that clause is executed.
+                                    <br>
+                                    <br>
+                                    The <code>case</code> clause should finish with a <code>break</code> keyword. If no case matches but a <code>default</code> clause is included, the code inside <code>default</code> will be executed.
+                                    <br>
+                                    <br>
+                                    <strong>Note:</strong> If <code>break</code> is omitted from the block of a <code>case</code>, the <code>switch</code> statement will continue to check against <code>case</code> values until a break is encountered or the flow is broken.
+                                </td>
+                                <td>
+    <pre><code>const food = 'salad';
+
+switch (food) {
+  case 'oyster':
+    console.log('The taste of the sea 🦪');
+    break;
+  case 'pizza':
+    console.log('A delicious pie 🍕');
+    break;
+  default:
+    console.log('Enjoy your meal');
+}
+
+// Prints: Enjoy your meal</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -149,8 +675,8 @@
         <h4>Week 5 Lecture 2</h4>
 
         <div class="accordion" id="accordionExample">
-            <!-- Loops -->
-            <div class="accordion-item">
+            
+            <div class="accordion-item">  <!-- Loops -->
                 <h2 class="accordion-header" id="headingTen">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                         Loops
@@ -263,8 +789,7 @@ do {
                 </div>
             </div>
 
-            <!-- Var/Let/Const -->
-            <div class="accordion-item">
+            <div class="accordion-item">  <!-- Var/Let/Const -->
                 <h2 class="accordion-header" id="headingEleven">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapsEleven">
                     Var/Let/Const
@@ -327,8 +852,7 @@ numberOfColumns = 8;
                 </div>
             </div>
 
-            <!-- Global Scope vs. Block Scope -->
-            <div class="accordion-item">
+            <div class="accordion-item">  <!-- Global Scope vs. Block Scope -->
                 <h2 class="accordion-header" id="headingTwelve">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapsTwelve">
                     Global Scope vs. Block Scope
@@ -339,15 +863,15 @@ numberOfColumns = 8;
                         <table>
                             <tr>
                                 <td>
-                                    Scope is a concept that refers to where values and functions can be accessed.
+                                    <strong>Scope</strong> is a concept that refers to where values and functions can be accessed.
                                     <br>
                                     <br>
                                     Various scopes include:
                                     <ul>
-                                        <li><em>Global</em> scope (a value/function in the global scope can be used anywhere in the entire program)</li>
-                                        <li><em>File</em> or <em>module</em> scope (the value/function can only be accessed from within the file)</li>
-                                        <li><em>Function</em> scope (only visible within the function)</li>
-                                        <li><em>Code block</em> scope (only visible within a <code>{ ... }</code> codeblock)</li>
+                                        <li><strong>Global scope</strong> (a value/function in the global scope can be used anywhere in the entire program)</li>
+                                        <li><strong>File</strong> or <strong>module scope</strong> (the value/function can only be accessed from within the file)</li>
+                                        <li><strong>Function scope</strong> (only visible within the function)</li>
+                                        <li><strong>Code block scope</strong> (only visible within a <code>{ ... }</code> codeblock)</li>
                                     </ul>
                                 </td>
                                 <td>
@@ -368,7 +892,7 @@ numberOfColumns = 8;
                         <table>
                             <tr>
                                 <td>
-                                    JavaScript variables that are declared outside of blocks or functions can exist in the <em>global</em> scope, which means they are accessible throughout a program. Variables declared outside of smaller block or function scopes are accessible inside those smaller scopes.
+                                    JavaScript variables that are declared outside of blocks or functions can exist in the <strong>global scope</strong>, which means they are accessible throughout a program. Variables declared outside of smaller block or function scopes are accessible inside those smaller scopes.
                                     <br>
                                     <br>
                                     <strong>Note:</strong> It is best practice to keep global variables to a minimum.
@@ -391,7 +915,7 @@ printColor(); // Prints: blue</code></pre>
                         <table>
                             <tr>
                                 <td>
-                                    <code>const</code> and <code>let</code> are block scoped variables, meaning they are only accessible in their block or nested blocks. In the given code block, trying to print the <code>statusMessage</code> using the <code>console.log()</code> method will result in a <code>ReferenceError</code>. It is accessible only inside that <code>if</code> block.
+                                    <code>const</code> and <code>let</code> are <strong>block scoped</strong> variables, meaning they are only accessible in their block or nested blocks. In the given code block, trying to print the <code>statusMessage</code> using the <code>console.log()</code> method will result in a <code>ReferenceError</code>. It is accessible only inside that <code>if</code> block.
                                 </td>
                                 <td>
 <pre><code>const isLoggedIn = true;
@@ -407,6 +931,225 @@ console.log(statusMessage);
                             </tr>
                         </table>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Week 5 Lecture 3 -->
+    <div class="lecture">
+        <h4>Week 5 Lecture 3</h4>
+
+        <div class="accordion" id="accordionExample">
+            
+            <div class="accordion-item">  <!-- Type Conversions -->
+                <h2 class="accordion-header" id="headingThirteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                        Type Conversions
+                    </button>
+                </h2>
+                <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <table>
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                                <td>
+<pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                                <td>
+<pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                                <td>
+<pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                                <td>
+<pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                                <td>
+<pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">  <!-- Truthy/Falsy Values -->
+                <h2 class="accordion-header" id="heading13">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                        Truthy/Falsy Values
+                    </button>
+                </h2>
+                <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <table>
+                            <tr>
+                                <td>
+                                    In JavaScript, values evaluate to <code>true</code> or <code>false</code> when evaluated as Booleans.
+                                    <ul>
+                                        <li>Values that evaluate to <code>true</code> are known as <strong>truthy</strong></li>
+                                        <li>Values that evaluate to <code>false</code> are known as <strong>falsy</strong></li>
+                                    </ul>
+                                    <strong>Falsy</strong> values include <code>false</code>, <code>0</code>, empty strings, <code>null</code>, <code>undefined</code>, and <code>NaN</code>. All other values are <strong>truthy</strong>.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">  <!-- Arrays and Array Methods -->
+                <h2 class="accordion-header" id="heading14">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                        Arrays and Array Methods
+                    </button>
+                </h2>
+                <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <table>
+                            <tr>
+                                <td>
+                                    <strong>Arrays</strong> are lists of ordered, stored data. They can hold items that are of any data type. Arrays are created by using square brackets, with individual elements separated by commas.
+                                </td>
+                                <td>
+<pre><code>// An array containing numbers
+const numberArray = [0, 1, 2, 3];
+
+// An array containing different data types
+const mixedArray = [1, 'chicken', false];</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    Array elements are arranged by <strong>index</strong> values, starting at <code>0</code> as the first element index. Elements can be accessed by their index using the array name, and the index surrounded by square brackets.
+                                </td>
+                                <td>
+<pre><code>// Accessing an array element
+const myArray = [100, 200, 300];
+
+console.log(myArray[0]); // 100
+console.log(myArray[1]); // 200
+console.log(myArray[2]); // 300</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    The <strong><code>.length</code> property</strong> of a JavaScript array indicates the number of elements the array contains.
+                                </td>
+                                <td>
+<pre><code>const numbers = [1, 2, 3, 4];
+
+numbers.length // 4</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    The <strong><code>.push()</code> method</strong> of JavaScript arrays can be used to add one or more elements to the end of an array. <code>.push()</code> mutates the original array and returns the new length of the array.
+                                </td>
+                                <td>
+<pre><code>// Adding a single element:
+const cart = ['apple', 'orange'];
+cart.push('pear'); 
+
+// Adding multiple elements:
+const numbers = [1, 2];
+numbers.push(3, 4, 5);</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    The <strong><code>.pop()</code> method</strong> removes the last element from an array and returns that element.
+                                </td>
+                                <td>
+<pre><code>const ingredients = ['eggs', 'flour', 'chocolate'];
+
+const poppedIngredient = ingredients.pop(); // 'chocolate'
+console.log(ingredients); // ['eggs', 'flour']</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    JavaScript arrays are <strong>mutable</strong>, meaning that the values they contain can be changed.
+                                    <br>
+                                    <br>
+                                    Even if they are declared using <code>const</code>, the contents can be manipulated by reassigning internal values or using methods like <code>.push()</code> and <code>.pop()</code>.
+                                </td>
+                                <td>
+<pre><code>const names = ['Alice', 'Bob'];
+
+names.push('Carl');
+// ['Alice', 'Bob', 'Carl']</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                </div>
                 </div>
             </div>
         </div>

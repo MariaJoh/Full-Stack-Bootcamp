@@ -149,3 +149,14 @@ header .logo {
     width: 100%;
   }
 }
+
+.embeddedtable th {
+    border:1px solid #303030;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.embeddedtable td {
+    border:1px solid #303030;
+    border-collapse: collapse;
+}
