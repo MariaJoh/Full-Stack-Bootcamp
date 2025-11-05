@@ -96,12 +96,12 @@ function validatePassword(pwd) {
 function handleSubmit(event) {
     event.preventDefault() // Prevents the page from reloading upon submission
 
-    const inputPassword = document.getElementById('validationCustomPassword').value
+    const inputPassword = document.getElementById('validationCustom07').value
     
     console.log(inputPassword)
 
     validatePassword(inputPassword)
-
+    
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (() => {
         'use strict'
