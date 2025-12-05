@@ -1,0 +1,50 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.green-background {
+    background-color:rgb(56, 66, 59) !important;
+    color: whitesmoke !important;
+}
+
+.light-green-background {
+    background-color: rgb(109, 126, 78) !important;
+    color: whitesmoke !important;
+}
+
+.white-smoke-background {
+    background-color: whitesmoke !important;
+}
+
+.list-group-item-secondary {
+    background-color: whitesmoke !important;
+}
+
+.list-group-item-secondary.active {
+    background-color: rgb(109, 126, 78) !important;
+    color: whitesmoke !important;
+}
+
+.list-group-item-secondary:hover {
+    background-color: rgb(198, 208, 179) !important;
+    color: darkslategrey !important;
+}
+
+.list-group-item-secondary.active:hover {
+    background-color: rgb(109, 126, 78) !important;
+    color: whitesmoke !important;
+}
+
+.btn-dark {
+    background-color:rgb(56, 66, 59) !important;
+    color: whitesmoke !important;
+}
+
+.btn-dark:hover {
+    background-color: rgb(109, 126, 78) !important;
+    color: whitesmoke !important;
+}
+
+#see-account-number {
+    cursor: pointer;
+}
