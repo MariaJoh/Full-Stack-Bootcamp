@@ -3,7 +3,7 @@ const apiKey = ''
 
 async function searchYTVideos() {
     const searchText = document.getElementById('search-text').value
-    const apiURL = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&part=snippet&q=${searchText}&type=video&maxResults=5`
+    const apiURL = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&part=snippet&q=${searchText}&type=video&maxResults=5&videoEmbeddable=true`
 
     try {
         const res = await fetch(apiURL)
