@@ -1,0 +1,92 @@
+# React: 
+  - A javascript library to build user interfaces
+  - Introduced in the year 2013 by Facebook (Meta)
+  - Declarative library (What to do, how to do)
+  - React is faster than traitional applications
+    - Virtual DOM: Copy of Real DOM
+      - Real DOM (Document Object Model)
+      - Reconciliation: Updating the real DOM optimally by only updating the affected nodes
+        - Diffing: Compare old virtual dom with new virtual DOM
+    - SPA: Single page application
+  - Websites: Netfix, Airbnb, Facebook, Instagram, Reddit, etc.
+
+  - Setup:
+    1. Download Node.js: https://nodejs.org/en/download
+      - NPM: Node Package Manager https://www.npmjs.com/
+      - Verify:
+        - node -v: Node version
+        - npm -v: NPM version
+    2. npm create vite@latest
+      - Will create a new react app
+        - Project name: react-basics
+        - Framework: React
+        - Variant: Javascript
+    3. Enter the folder within the terminal
+      - cd project-name
+    4. Start the application
+      - npm run dev (React complies code and creates a js file understandable by the browser)
+
+
+  - Folder overview:
+    - index.html: Only html file in the complete react app
+    - src: Source code of react app
+      - App.jsx: Parent Component
+      - App.css: Styles related to Parent Component
+      - main.jsx: Logic to compile components and add to html root
+      - index.css: Global styles
+      - assets: Assets related to app
+    - package.json: Metadata of application
+
+  - Components:
+    - Building block of React code
+    - Small blocks of code to build parts of UI
+    - Features:
+      - Can be nested
+      - Can be re-used
+    - Function component syntax:
+      function Component1() {
+        return (
+          <h1>Test</h1>
+        )
+      }
+      - Component name should be in PascalCase
+      - Components return JSX
+        - JSX: Javascript + XML (Javascript in disguise)
+          - To use variable values/expression results within JSX, use {}
+          - JSX/HTML differences:
+            - className for "class" attribute
+            - Singleton tags need mandatory syntax 
+              - <singleton />
+              - <singleton></singleton>
+            - true, false, undefined and null don't render anything
+
+    - To use a coomponent in parent component
+      - Import
+      - Syntax:
+        - <Component1 />
+        - <Component1></Component1>
+
+    - Props ***:
+      - Makes components dynamic
+      - Data passed from the parent component to the child component
+      - Syntax:
+        - Pass
+          <Component1 prop1={value1} />
+        - Use
+          function Component1({ prop1 }) {
+            return (
+              <h1>Test {prop1}</h1>
+            )
+          }
+
+    - Render: 
+      - Component loaded in the DOM
+      - JSX converted to HTML
+
+    - React component can have 2 types of data ***
+      - Data
+        - props: Data received from parent component
+        - state: Data belonging to that component
+      - Rules:
+        - Component re-renders whenever the prop or state changes
+        - State value should only be updated using state handler

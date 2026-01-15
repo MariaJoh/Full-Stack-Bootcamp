@@ -1,0 +1,17 @@
+.user-box {
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 10px auto;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.premium {
+  background-color: gold;
+  padding: 5px 10px;
+}

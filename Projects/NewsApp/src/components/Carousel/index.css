@@ -1,0 +1,6 @@
+.news-image {
+  width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 4 / 2;
+  margin: auto;
+}
