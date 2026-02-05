@@ -1,0 +1,23 @@
+/* Background */
+.secondary-navbar {
+  background-color: #232f3e;
+}
+
+/* Brand + links */
+.secondary-navbar .navbar-brand,
+.secondary-navbar .nav-link,
+.secondary-navbar .dropdown-toggle {
+  color: #ffffff;
+}
+
+/* Hover + focus */
+.secondary-navbar .nav-link:hover,
+.secondary-navbar .dropdown-toggle:hover {
+  color: #fcaf17;
+}
+
+/* Active NavLink (react-router) */
+.secondary-navbar .nav-link.active {
+  font-weight: 600;
+  color: #fcaf17;
+}

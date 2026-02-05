@@ -8,10 +8,9 @@ function Header() {
   return (
     <div>
       <h1 className="display-2">
-        Welcome to{' '}
-        <span style={brandStyle}>EasyBuy</span>
+        Amazon Best Sellers
       </h1>
-      <p className="lead fs-4">Get the best deals on online products</p>
+      <p className="lead fs-4">Our most popular products based on sales. Updated frequently.</p>
     </div>
   );
 }

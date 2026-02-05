@@ -5,20 +5,19 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Badge from 'react-bootstrap/Badge'
 import logo from '../assets/logo.png'
 import { NavLink } from 'react-router'
+import "./Navbar.css"
 
 function NavbarComponent({ cart }) {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" className="custom-navbar">
       <Container>
         <Navbar.Brand as={NavLink} to='/'>
           <img
             alt=""
             src={logo}
-            width="30"
-            height="30"
+            height="50"
             className="d-inline-block align-top"
-          />{' '}
-          EasyBuy
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import NavbarComponent from './components/Navbar';
+import SecondaryNav from './components/SecondaryNav';
 import LandingPage from './pages/Landing'
 import CartPage from './pages/Cart'
 import NotFound from './pages/NotFound'
@@ -23,6 +24,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavbarComponent cart={cart} />
+      <SecondaryNav/>
       <Container className='text-center my-5'>
         <Routes>
           <Route 

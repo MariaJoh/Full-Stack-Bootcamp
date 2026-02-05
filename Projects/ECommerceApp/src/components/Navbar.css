@@ -1,0 +1,37 @@
+/* Background */
+.custom-navbar {
+  background-color: #131921;
+}
+
+/* Brand + links */
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link,
+.custom-navbar .dropdown-toggle {
+  color: #ffffff;
+}
+
+/* Hover + focus */
+.custom-navbar .nav-link:hover,
+.custom-navbar .dropdown-toggle:hover {
+  color: #fcaf17;
+}
+
+/* Active NavLink (react-router) */
+.custom-navbar .nav-link.active {
+  font-weight: 600;
+  color: #fcaf17;
+}
+
+/* Dropdown menu items */
+.custom-navbar .dropdown-menu {
+  background-color: #fff;
+}
+
+.custom-navbar .dropdown-item {
+  color: #2b2b2b;
+}
+
+.custom-navbar .dropdown-item:hover {
+  color: #cc6235;
+}
+

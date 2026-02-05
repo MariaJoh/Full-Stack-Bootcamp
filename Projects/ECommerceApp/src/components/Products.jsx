@@ -45,21 +45,12 @@ function Products({ cart, addToCart }) {
   }
 
   return (
+    
     <>
-      <div className='d-flex justify-content-end'>
-        <Form.Select 
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-          style={{ width: '10em'}}
-        >
-          <option value='all'>All</option>
-          {categories.map((category, index) => (
-            <option key={index} value={category}>
-              {category[0].toUpperCase() + category.slice(1)}
-            </option>
-          ))}
-        </Form.Select>
-      </div>
+      <SecondaryNav setCategory={setCategory} />
+      <filteredProducts category={category} />
+    
+  
       <Row className='mt-5'>
         {filteredProducts.length ? filteredProducts.map(product => (
           <Col key={product.id}>
